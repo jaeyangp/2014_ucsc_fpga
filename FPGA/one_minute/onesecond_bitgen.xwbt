@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\dalsook\FPGA\one_minute\onesecond.ncd
+OUTFILE=C:\Users\dalsook\FPGA\one_minute\onesecond.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=C:\Users\dalsook\FPGA\one_minute
+LICENSE=WebPack
+USER_INFO=210845836_0_0_050

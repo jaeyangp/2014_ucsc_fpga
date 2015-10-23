@@ -1,0 +1,31 @@
+When you unzip you get the following files
+
+kcpsm3.v
+embedded_kcpsm3.v
+ROM_form.v
+kcpsm3.dat
+
+
+
+When you unzip you get the following files:
+
+kcpsm3.v
+embedded_kcpsm3.v
+ROM_form.v
+kcpsm3.dat
+
+
+You require the following 3 files on LINUX/WINDOWS
+kcpsm3.v
+embedded_kcpsm3.v
+ROM_form.v
+
+If you have windows64 do the following:
+
+rename kcpsm3.dat as kcpsm3.exe
+
+Note that kcpsm3.exe is an executable which takes your assembly language
+prog_rom.psm and convert to prog_rom.v
+
+If you have windows32 or LINUX machine, you should get
+kcpsm3.exe from xilinx web site. In that case please delete kcpsm3.dat

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/FPGA/mux4/mux_top.xst" -ofn "D:/FPGA/mux4/mux_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc board.ucf -p xc3s100e-cp132-5 mux_top.ngc mux_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o mux_top_map.ncd mux_top.ngd mux_top.pcf 
+par -w -intstyle ise -ol high -t 1 mux_top_map.ncd mux_top.ncd mux_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mux_top.twx mux_top.ncd -o mux_top.twr mux_top.pcf -ucf board.ucf 
+bitgen -intstyle ise -f mux_top.ut mux_top.ncd 

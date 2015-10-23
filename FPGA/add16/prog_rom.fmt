@@ -1,0 +1,64 @@
+          ; prog_rom.psm
+          ; UCSC Extension - Digital Design with FPGA
+          ; Jae-Yang Park
+          ; jaeyangp@gmail.com
+          ;
+          ; input: 0: not reached one sec. 1: one sec happened
+          ; output: ans_l --> OUTPUTPORT_L
+          ;         ans_h --> OUTPUTPORT_H
+          ;         {ans_h, ans_l} is 16 bit result
+          ; input and output port
+          CONSTANT INPUTPORT, 00     ; '1' at every one second
+          CONSTANT OUTPUTPORT_L, 01  ; LSB portion of result
+          CONSTANT OUTPUTPORT_H, 02  ; MSB portion of result
+          ; constant values
+          CONSTANT MAX_MSB, 27       ; 9999 (270fh)
+          CONSTANT MAX_LSB, 0F
+          CONSTANT START_NUM, 04     ; start number
+          CONSTANT INC_NUM, 23       ; incremenr value, 35 (23h)
+          ; register alias
+          NAMEREG s0, indata
+          NAMEREG s1, startdata      ; inclement value
+          NAMEREG s2, ans_l          ; LSB of result
+          NAMEREG s3, ans_h          ; MSB of result
+          ;
+          ; main program
+          ;
+    main: 
+          CALL init
+          CALL display               ; result through output port
+          ;
+    calc: 
+          INPUT indata, INPUTPORT
+          CALL add_num               ; add ans + increment values
+          CALL display               ; send result through output port to display
+          COMPARE ans_h, MAX_MSB     ; check if result reached 9999 (270fh)
+          JUMP C, calc               ; ans_h < 9984
+          ;
+next_chk: ; ans_h > 9984
+          COMPARE ans_l, MAX_LSB     ; check if ans_l > 15, 9984+15 = 9999
+          JUMP NC, main              ; yes, result is reached 9999
+          JUMP calc                  ; no, result is not reached 9999
+          ;
+    init: 
+          LOAD ans_l, START_NUM      ; start number
+          LOAD ans_h, 00             ; clear the MSB of result
+          RETURN 
+          ; send results through output port
+ display: 
+          OUTPUT ans_l, OUTPUTPORT_L ; LSB
+          OUTPUT ans_h, OUTPUTPORT_H ; MSB
+          RETURN 
+          ;
+          ; add numbers
+          ; ans_l = ans_l + startdata
+ add_num: 
+          COMPARE indata, 00         ; 1: one sec is happened, 0 is not
+          JUMP NZ, add_num1          ; no one sec, then return, or go to add number
+          RETURN 
+          ;
+add_num1: 
+          LOAD startdata, INC_NUM    ; increment at a distance of 35
+          ADD ans_l, startdata       ; add LSB with startdata
+          ADDCY ans_h, 00            ; add MSB with carry
+          RETURN                     ; {ans_h, ans_l} is complete 16 bits result

@@ -1,0 +1,10 @@
+MO display NULL display_top.v vlg1E/display.bin 1393455043
+MO rom NULL display_top.v vlg3A/rom.bin 1393455043
+MO hex2_7seg_lut NULL display_top.v vlg4C/hex2__7seg__lut.bin 1393455043
+MO mod_counter NULL display_top.v vlg77/mod__counter.bin 1393455043
+MO bin2bcd NULL display_top.v vlg0C/bin2bcd.bin 1393455043
+MO counter NULL display_top.v vlg10/counter.bin 1393455043
+MO add3 NULL display_top.v vlg48/add3.bin 1393455043
+MO decoder NULL display_top.v vlg02/decoder.bin 1393455043
+MO display_top NULL display_top.v vlg10/display__top.bin 1393455043
+MO one_second NULL display_top.v vlg2D/one__second.bin 1393455043

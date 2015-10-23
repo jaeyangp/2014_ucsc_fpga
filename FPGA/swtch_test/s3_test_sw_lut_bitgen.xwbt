@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\dalsook\FPGA\swtch_test\s3_test_sw_lut.ncd
+OUTFILE=C:\Users\dalsook\FPGA\swtch_test\s3_test_sw_lut.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=C:\Users\dalsook\FPGA\swtch_test
+LICENSE=WebPack
+USER_INFO=210845836_0_0_050

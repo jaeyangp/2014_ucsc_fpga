@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon Feb 03 19:21:56 2014
+
+drc -z s3_hex2_7seg.ncd s3_hex2_7seg.pcf
+
+DRC detected 0 errors and 0 warnings.

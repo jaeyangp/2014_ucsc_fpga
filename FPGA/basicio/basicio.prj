@@ -1,0 +1,5 @@
+verilog work "PROG_ROM.V"
+verilog work "kcpsm3.v"
+verilog work "hex2seg.v"
+verilog work "embedded_kcpsm3.v"
+verilog work "basicio.v"

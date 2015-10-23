@@ -1,0 +1,3 @@
+No constant labels were specified in the PSM file.
+The assembler directive CONSTANT <label>,<value> can make programs much
+easier to read and develop.

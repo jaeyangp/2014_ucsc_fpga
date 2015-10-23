@@ -1,0 +1,43 @@
+# FILE:board.ucf
+
+# Pin assignment for SWITCHES
+NET "sw<7>" LOC = "N3";  
+NET "sw<6>" LOC = "E2";  
+NET "sw<5>" LOC = "F3";  
+NET "sw<4>" LOC = "G3";  
+NET "sw<3>" LOC = "B4"; 
+NET "sw<2>" LOC = "K3";  
+NET "sw<1>" LOC = "L3";  
+NET "sw<0>" LOC = "P11";  
+
+# Pin assignment for LEDs
+NET "Led<7>" LOC = "G1" ; 
+NET "Led<6>" LOC = "P4" ; 
+NET "Led<5>" LOC = "N4" ;  
+NET "Led<4>" LOC = "N5" ; 
+NET "Led<3>" LOC = "P6" ;
+NET "Led<2>" LOC = "P7" ;
+NET "Led<1>" LOC = "M11" ; 
+NET "Led<0>" LOC = "M5" ;  
+
+# Pin assignment for 7 segments display
+NET "seg<0>" LOC = "L14";#CA
+NET "seg<1>" LOC = "H12";#CB
+NET "seg<2>" LOC = "N14";#CC
+NET "seg<3>" LOC = "N11";#CD
+NET "seg<4>" LOC = "P12";#CE
+NET "seg<5>" LOC = "L13";#CF
+NET "seg<6>" LOC = "M12";#CG
+
+# For Anodes
+NET "an<3>" LOC = "K14";#AN3
+NET "an<2>" LOC = "M13";#AN2
+NET "an<1>" LOC = "J12";#AN1
+NET "an<0>" LOC = "F12";#AN0
+
+
+# Pin assignment for clock
+NET "CLK1" LOC = "B8"; #MCLK
+
+# Pin assignment for BTNs
+NET "arst" LOC = "A7";  #BTN3

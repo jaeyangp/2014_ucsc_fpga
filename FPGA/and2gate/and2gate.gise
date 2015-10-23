@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="and2gate.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="s3_and2gate.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="s3_and2gate.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="s3_and2gate.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="s3_and2gate.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="s3_and2gate.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="s3_and2gate.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="s3_and2gate.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="s3_and2gate.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="s3_and2gate.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="s3_and2gate.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="s3_and2gate.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="s3_and2gate.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="s3_and2gate.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="s3_and2gate.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="s3_and2gate.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="s3_and2gate.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="s3_and2gate.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="s3_and2gate.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="s3_and2gate.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="s3_and2gate.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="s3_and2gate.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="s3_and2gate.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="s3_and2gate.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="s3_and2gate_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="s3_and2gate_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="s3_and2gate_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="s3_and2gate_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="s3_and2gate_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="s3_and2gate_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="s3_and2gate_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="s3_and2gate_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="s3_and2gate_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="s3_and2gate_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="s3_and2gate_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="s3_and2gate_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="s3_and2gate_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="s3_and2gate_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="s3_and2gate_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1390787703" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1390787703">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1390787703" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8069517889102412036" xil_pn:start_ts="1390787703">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1390787703" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6698530325005445454" xil_pn:start_ts="1390787703">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1390787703" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1390787703">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1390787703" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="7111342917884203266" xil_pn:start_ts="1390787703">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1390787703" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1390787703">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1390787703" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="754868776478974488" xil_pn:start_ts="1390787703">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1390788258" xil_pn:in_ck="4660949502952234" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7771619274306562155" xil_pn:start_ts="1390788246">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="s3_and2gate.lso"/>
+      <outfile xil_pn:name="s3_and2gate.ngc"/>
+      <outfile xil_pn:name="s3_and2gate.ngr"/>
+      <outfile xil_pn:name="s3_and2gate.prj"/>
+      <outfile xil_pn:name="s3_and2gate.stx"/>
+      <outfile xil_pn:name="s3_and2gate.syr"/>
+      <outfile xil_pn:name="s3_and2gate.xst"/>
+      <outfile xil_pn:name="s3_and2gate_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1390788265" xil_pn:in_ck="5075774008714985106" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-5808566800376505683" xil_pn:start_ts="1390788265">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1390788273" xil_pn:in_ck="8873213763720186179" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2298505647240214833" xil_pn:start_ts="1390788265">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="s3_and2gate.bld"/>
+      <outfile xil_pn:name="s3_and2gate.ngd"/>
+      <outfile xil_pn:name="s3_and2gate_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1390788284" xil_pn:in_ck="8873213763720186180" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="3236488012892527759" xil_pn:start_ts="1390788273">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="s3_and2gate.pcf"/>
+      <outfile xil_pn:name="s3_and2gate_map.map"/>
+      <outfile xil_pn:name="s3_and2gate_map.mrp"/>
+      <outfile xil_pn:name="s3_and2gate_map.ncd"/>
+      <outfile xil_pn:name="s3_and2gate_map.ngm"/>
+      <outfile xil_pn:name="s3_and2gate_map.xrpt"/>
+      <outfile xil_pn:name="s3_and2gate_summary.xml"/>
+      <outfile xil_pn:name="s3_and2gate_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1390788299" xil_pn:in_ck="3829783353698409053" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1390788284">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="s3_and2gate.ncd"/>
+      <outfile xil_pn:name="s3_and2gate.pad"/>
+      <outfile xil_pn:name="s3_and2gate.par"/>
+      <outfile xil_pn:name="s3_and2gate.ptwx"/>
+      <outfile xil_pn:name="s3_and2gate.unroutes"/>
+      <outfile xil_pn:name="s3_and2gate.xpi"/>
+      <outfile xil_pn:name="s3_and2gate_pad.csv"/>
+      <outfile xil_pn:name="s3_and2gate_pad.txt"/>
+      <outfile xil_pn:name="s3_and2gate_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1390788455" xil_pn:in_ck="6317794251703070830" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="5775731546441462550" xil_pn:start_ts="1390788442">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="s3_and2gate.bgn"/>
+      <outfile xil_pn:name="s3_and2gate.bit"/>
+      <outfile xil_pn:name="s3_and2gate.drc"/>
+      <outfile xil_pn:name="s3_and2gate.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1390788299" xil_pn:in_ck="8873213763720186048" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1390788294">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="s3_and2gate.twr"/>
+      <outfile xil_pn:name="s3_and2gate.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

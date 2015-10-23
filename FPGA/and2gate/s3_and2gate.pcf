@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Jan 26 18:04:41 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Led<4>" LOCATE = SITE "N5" LEVEL 1;
+COMP "sw<6>" LOCATE = SITE "E2" LEVEL 1;
+COMP "sw<7>" LOCATE = SITE "N3" LEVEL 1;
+SCHEMATIC END;
+

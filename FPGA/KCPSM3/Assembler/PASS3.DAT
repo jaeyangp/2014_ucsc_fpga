@@ -1,0 +1,42 @@
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; prog_rom.psm
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; move data from input port 00 to register 50
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-INPUT
+   OPERAND1-s0
+   OPERAND2-00
+    COMMENT-
+    ADDRESS-001
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; move data from register s0 to output 02
+    ADDRESS-001
+      LABEL-
+INSTRUCTION-OUTPUT
+   OPERAND1-s0
+   OPERAND2-02
+    COMMENT-
+    ADDRESS-002
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; loop
+    ADDRESS-002
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-000
+   OPERAND2-
+    COMMENT-

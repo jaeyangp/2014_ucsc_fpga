@@ -1,0 +1,12 @@
+MO display NULL display.v vlg1E/display.bin 1394811052
+MO mux41_case NULL mux4.v vlg4A/mux41__case.bin 1394811052
+MO mux41_2_luts_1_muxf5 NULL mux4.v vlg6F/mux41__2__luts__1__muxf5.bin 1394811052
+MO hex2_7seg_lut NULL display.v vlg4C/hex2__7seg__lut.bin 1394811052
+MO mod_counter NULL one_second.v vlg77/mod__counter.bin 1394811052
+MO bin2bcd NULL bin2bcd.v vlg0C/bin2bcd.bin 1394811052
+MO mux_top NULL mux4.v vlg58/mux__top.bin 1394811052
+MO counter NULL display.v vlg10/counter.bin 1394811052
+MO mux41_3_luts NULL mux4.v vlg44/mux41__3__luts.bin 1394811052
+MO decoder NULL display.v vlg02/decoder.bin 1394811052
+MO one_second NULL one_second.v vlg2D/one__second.bin 1394811052
+MO mux41_2_luts_no_muxf5 NULL mux4.v vlg7B/mux41__2__luts__no__muxf5.bin 1394811052

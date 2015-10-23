@@ -1,0 +1,56 @@
+             ; prog_rom.psm
+             ; move data from input port 00 to register s0
+             ;INPUT s0,00
+             ; move data from register s0 to output 02
+             ;OUTPUT s0,02
+             ; loop
+             ;JUMP 000
+             ;
+             ;===
+             ; input and output port
+             CONSTANT INPUTPORT, 00
+             CONSTANT OUTPUTPORT_L, 01
+             CONSTANT OUTPUTPORT_H, 02
+             ;====
+             ; register alias
+             NAMEREG s0, indata
+             NAMEREG s1, scratch
+             NAMEREG s2, ans_l
+             NAMEREG s3, ans_h
+             ;====
+             ; main program
+       loop: 
+             LOAD ans_l, 00
+             LOAD ans_h, 00
+             CALL read_switch
+             CALL compute_sum
+             CALL display
+             JUMP loop
+read_switch: 
+             INPUT indata, INPUTPORT
+             RETURN 
+    display: 
+             OUTPUT ans_l, OUTPUTPORT_L
+             OUTPUT ans_h, OUTPUTPORT_H
+             RETURN 
+compute_sum: 
+             LOAD ans_l, indata
+             LOAD scratch, indata
+             COMPARE indata, 00
+             JUMP NZ, start1
+             RETURN 
+     start1: 
+             COMPARE indata, 01
+             JUMP NZ, start
+             RETURN 
+      start: 
+             LOAD ans_l, 00
+             LOAD ans_h, 00
+      until: 
+             ADD ans_l, scratch
+             JUMP NC, next
+             ADDCY ans_h, 00
+       next: 
+             SUB scratch, 01
+             JUMP NZ, until
+             RETURN 

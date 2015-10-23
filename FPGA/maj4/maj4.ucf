@@ -1,0 +1,10 @@
+# FILE:maj4.ucf
+
+# Pin assignment for SWITCHES
+NET "sw<6>" LOC = "E2";  
+NET "sw<5>" LOC = "F3";  
+NET "sw<4>" LOC = "G3";  
+NET "sw<3>" LOC = "B4"; 
+
+# Pin assignment for LEDs
+NET "Led<3>" LOC = "P6" ;

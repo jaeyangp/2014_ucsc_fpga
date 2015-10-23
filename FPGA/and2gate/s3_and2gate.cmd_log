@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/dalsook/FPGA/and2gate/s3_and2gate.xst" -ofn "C:/Users/dalsook/FPGA/and2gate/s3_and2gate.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/dalsook/FPGA/board.ucf -p xc3s100e-cp132-5 s3_and2gate.ngc s3_and2gate.ngd  
+xst -intstyle ise -ifn "C:/Users/dalsook/FPGA/and2gate/s3_and2gate.xst" -ofn "C:/Users/dalsook/FPGA/and2gate/s3_and2gate.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc and2gate.ucf -p xc3s100e-cp132-5 s3_and2gate.ngc s3_and2gate.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o s3_and2gate_map.ncd s3_and2gate.ngd s3_and2gate.pcf 
+par -w -intstyle ise -ol high -t 1 s3_and2gate_map.ncd s3_and2gate.ncd s3_and2gate.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml s3_and2gate.twx s3_and2gate.ncd -o s3_and2gate.twr s3_and2gate.pcf -ucf and2gate.ucf 
+bitgen -intstyle ise -f s3_and2gate.ut s3_and2gate.ncd 

@@ -1,0 +1,232 @@
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 
+xst -intstyle ise -ifn "D:/FPGA/heart_beat_pattern/heart_beat.xst" -ofn "D:/FPGA/heart_beat_pattern/heart_beat.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 heart_beat.ngc heart_beat.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o heart_beat_map.ncd heart_beat.ngd heart_beat.pcf 
+par -w -intstyle ise -ol high -t 1 heart_beat_map.ncd heart_beat.ncd heart_beat.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml heart_beat.twx heart_beat.ncd -o heart_beat.twr heart_beat.pcf 
+bitgen -intstyle ise -f heart_beat.ut heart_beat.ncd 

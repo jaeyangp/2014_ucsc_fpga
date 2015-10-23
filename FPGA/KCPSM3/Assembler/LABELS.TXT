@@ -1,0 +1,11 @@
+No labels were specified in the PSM file.
+The use of line labels can make programs much easier to read and develop.
+Example.....
+                    CALL delay50         ;call delay subroutine
+                    .
+                    .
+                    .
+           delay50: LOAD s3,32          ;Delay loop repeated 50 times
+      inner_loop50: SUB s3,01
+                    JUMP NZ, inner_loop50
+                    RETURN

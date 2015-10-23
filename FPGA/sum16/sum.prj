@@ -1,0 +1,7 @@
+verilog work "prog_rom.v"
+verilog work "kcpsm3.v"
+verilog work "one_second.v"
+verilog work "embedded_kcpsm3.v"
+verilog work "display.v"
+verilog work "bin2bcd.v"
+verilog work "sum16.v"

@@ -1,0 +1,4 @@
+verilog work "one_second.v"
+verilog work "display.v"
+verilog work "bin2bcd.v"
+verilog work "mux4.v"

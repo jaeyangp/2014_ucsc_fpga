@@ -1,0 +1,699 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: mux_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mux_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mux_top"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : mux_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "one_second.v" in library work
+Module <mod_counter> compiled
+Compiling verilog file "display.v" in library work
+Module <one_second> compiled
+Module <counter> compiled
+Module <hex2_7seg_lut> compiled
+Module <decoder> compiled
+Compiling verilog file "bin2bcd.v" in library work
+Module <display> compiled
+Compiling verilog file "mux4.v" in library work
+Module <bin2bcd> compiled
+Module <mux41_case> compiled
+Module <mux41_3_luts> compiled
+Module <mux41_2_luts_no_muxf5> compiled
+Module <mux41_2_luts_1_muxf5> compiled
+Module <mux_top> compiled
+No errors in compilation
+Analysis of file <"mux_top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <mux_top> in library <work> with parameters.
+	H = "00000000000000000000000000001110"
+	MN = "00000000000000000000000000000100"
+	MS = "00000000000000000000000000000010"
+	N = "00000000000000000000000000000111"
+	S = "00000000000000000000000000001000"
+	W = "00000000000000000000000000000100"
+
+Analyzing hierarchy for module <one_second> in library <work> with parameters.
+	C = "00000000000000000000000000011010"
+	CRYSTAL = "00000000000000000000000000110010"
+	NUM_SEC = "00000000000000000000000000000001"
+	STOPAT = "01011111010111100000111111"
+
+Analyzing hierarchy for module <counter> in library <work> with parameters.
+	N = "00000000000000000000000000000110"
+
+Analyzing hierarchy for module <mux41_case> in library <work> with parameters.
+	N = "00000000000000000000000000000100"
+	S = "00000000000000000000000000000010"
+
+Analyzing hierarchy for module <mux41_3_luts> in library <work> with parameters.
+	N = "00000000000000000000000000000100"
+	S = "00000000000000000000000000000010"
+
+Analyzing hierarchy for module <mux41_2_luts_no_muxf5> in library <work> with parameters.
+	N = "00000000000000000000000000000100"
+	S = "00000000000000000000000000000010"
+
+Analyzing hierarchy for module <mux41_2_luts_1_muxf5> in library <work> with parameters.
+	N = "00000000000000000000000000000100"
+	S = "00000000000000000000000000000010"
+
+Analyzing hierarchy for module <bin2bcd> in library <work> with parameters.
+	C = "00000000000000000000000000000100"
+	N = "00000000000000000000000000001110"
+
+Analyzing hierarchy for module <display> in library <work> with parameters.
+	ANODE_FREQ = "00000000000000000000000000010011"
+	C = "00000000000000000000000000011010"
+	N = "00000000000000000000000000000111"
+	S = "00000000000000000000000000000010"
+	W = "00000000000000000000000000000100"
+
+Analyzing hierarchy for module <mod_counter> in library <work> with parameters.
+	MAX = "01011111010111100000111111"
+	N = "00000000000000000000000000011010"
+
+Analyzing hierarchy for module <counter> in library <work> with parameters.
+	N = "00000000000000000000000000011010"
+
+Analyzing hierarchy for module <decoder> in library <work>.
+
+Analyzing hierarchy for module <hex2_7seg_lut> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <mux_top>.
+	H = 32'sb00000000000000000000000000001110
+	MN = 32'sb00000000000000000000000000000100
+	MS = 32'sb00000000000000000000000000000010
+	N = 32'sb00000000000000000000000000000111
+	S = 32'sb00000000000000000000000000001000
+	W = 32'sb00000000000000000000000000000100
+Module <mux_top> is correct for synthesis.
+ 
+Analyzing module <one_second> in library <work>.
+	C = 32'sb00000000000000000000000000011010
+	CRYSTAL = 32'sb00000000000000000000000000110010
+	NUM_SEC = 32'sb00000000000000000000000000000001
+	STOPAT = 26'b01011111010111100000111111
+Module <one_second> is correct for synthesis.
+ 
+Analyzing module <mod_counter> in library <work>.
+	MAX = 26'b01011111010111100000111111
+	N = 32'sb00000000000000000000000000011010
+Module <mod_counter> is correct for synthesis.
+ 
+Analyzing module <counter.1> in library <work>.
+	N = 32'sb00000000000000000000000000000110
+Module <counter.1> is correct for synthesis.
+ 
+Analyzing module <mux41_case> in library <work>.
+	N = 32'sb00000000000000000000000000000100
+	S = 32'sb00000000000000000000000000000010
+Module <mux41_case> is correct for synthesis.
+ 
+Analyzing module <mux41_3_luts> in library <work>.
+	N = 32'sb00000000000000000000000000000100
+	S = 32'sb00000000000000000000000000000010
+Module <mux41_3_luts> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  00CA" for instance <L1> in unit <mux41_3_luts>.
+    Set user-defined property "INIT =  00CA" for instance <L2> in unit <mux41_3_luts>.
+    Set user-defined property "INIT =  00CA" for instance <L3> in unit <mux41_3_luts>.
+Analyzing module <mux41_2_luts_no_muxf5> in library <work>.
+	N = 32'sb00000000000000000000000000000100
+	S = 32'sb00000000000000000000000000000010
+Module <mux41_2_luts_no_muxf5> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  00CA" for instance <L1> in unit <mux41_2_luts_no_muxf5>.
+    Set user-defined property "INIT =  CA00" for instance <L2> in unit <mux41_2_luts_no_muxf5>.
+Analyzing module <mux41_2_luts_1_muxf5> in library <work>.
+	N = 32'sb00000000000000000000000000000100
+	S = 32'sb00000000000000000000000000000010
+Module <mux41_2_luts_1_muxf5> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  00CA" for instance <L1> in unit <mux41_2_luts_1_muxf5>.
+    Set user-defined property "INIT =  00CA" for instance <L2> in unit <mux41_2_luts_1_muxf5>.
+Analyzing module <bin2bcd> in library <work>.
+	C = 32'sb00000000000000000000000000000100
+	N = 32'sb00000000000000000000000000001110
+Module <bin2bcd> is correct for synthesis.
+ 
+Analyzing module <display> in library <work>.
+	ANODE_FREQ = 32'sb00000000000000000000000000010011
+	C = 32'sb00000000000000000000000000011010
+	N = 32'sb00000000000000000000000000000111
+	S = 32'sb00000000000000000000000000000010
+	W = 32'sb00000000000000000000000000000100
+Module <display> is correct for synthesis.
+ 
+Analyzing module <counter.2> in library <work>.
+	N = 32'sb00000000000000000000000000011010
+Module <counter.2> is correct for synthesis.
+ 
+Analyzing module <decoder> in library <work>.
+Module <decoder> is correct for synthesis.
+ 
+Analyzing module <hex2_7seg_lut> in library <work>.
+Module <hex2_7seg_lut> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  2812" for instance <CA> in unit <hex2_7seg_lut>.
+    Set user-defined property "INIT =  D860" for instance <CB> in unit <hex2_7seg_lut>.
+    Set user-defined property "INIT =  D004" for instance <CC> in unit <hex2_7seg_lut>.
+    Set user-defined property "INIT =  8492" for instance <CD> in unit <hex2_7seg_lut>.
+    Set user-defined property "INIT =  02BA" for instance <CE> in unit <hex2_7seg_lut>.
+    Set user-defined property "INIT =  208E" for instance <CF> in unit <hex2_7seg_lut>.
+    Set user-defined property "INIT =  1083" for instance <CG> in unit <hex2_7seg_lut>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <counter_1>.
+    Related source file is "display.v".
+    Found 6-bit up counter for signal <q>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter_1> synthesized.
+
+
+Synthesizing Unit <mux41_case>.
+    Related source file is "mux4.v".
+    Found 1-bit 4-to-1 multiplexer for signal <out>.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux41_case> synthesized.
+
+
+Synthesizing Unit <bin2bcd>.
+    Related source file is "bin2bcd.v".
+WARNING:Xst:646 - Signal <result> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bin> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <bcd<17:16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit adder for signal <$add0000> created at line 22.
+    Found 4-bit adder for signal <$add0001> created at line 22.
+    Found 4-bit adder for signal <$add0002> created at line 22.
+    Found 4-bit adder for signal <$add0003> created at line 22.
+    Found 4-bit adder for signal <$add0004> created at line 24.
+    Found 4-bit adder for signal <$add0005> created at line 22.
+    Found 4-bit adder for signal <$add0006> created at line 24.
+    Found 4-bit adder for signal <$add0007> created at line 22.
+    Found 4-bit adder for signal <$add0008> created at line 24.
+    Found 4-bit adder for signal <$add0009> created at line 22.
+    Found 4-bit adder for signal <$add0010> created at line 24.
+    Found 4-bit adder for signal <$add0011> created at line 26.
+    Found 4-bit adder for signal <$add0012> created at line 22.
+    Found 4-bit adder for signal <$add0013> created at line 24.
+    Found 4-bit adder for signal <$add0014> created at line 26.
+    Found 4-bit adder for signal <$add0015> created at line 22.
+    Found 4-bit adder for signal <$add0016> created at line 24.
+    Found 4-bit adder for signal <$add0017> created at line 26.
+    Found 4-bit adder for signal <$add0018> created at line 22.
+    Found 4-bit adder for signal <$add0019> created at line 24.
+    Found 4-bit adder for signal <$add0020> created at line 26.
+    Found 4-bit adder for signal <$add0021> created at line 28.
+    Found 4-bit adder for signal <$add0022> created at line 22.
+    Found 4-bit adder for signal <$add0023> created at line 24.
+    Found 4-bit adder for signal <$add0024> created at line 26.
+    Found 4-bit adder for signal <$add0025> created at line 28.
+    Found 4-bit comparator greater for signal <result$cmp_gt0000> created at line 21.
+    Found 4-bit comparator greater for signal <result$cmp_gt0001> created at line 21.
+    Found 4-bit comparator greater for signal <result$cmp_gt0002> created at line 21.
+    Found 4-bit comparator greater for signal <result$cmp_gt0003> created at line 23.
+    Found 4-bit comparator greater for signal <result$cmp_gt0004> created at line 21.
+    Found 4-bit comparator greater for signal <result$cmp_gt0005> created at line 23.
+    Found 4-bit comparator greater for signal <result$cmp_gt0006> created at line 21.
+    Found 4-bit comparator greater for signal <result$cmp_gt0007> created at line 23.
+    Found 4-bit comparator greater for signal <result$cmp_gt0008> created at line 21.
+    Found 4-bit comparator greater for signal <result$cmp_gt0009> created at line 25.
+    Found 4-bit comparator greater for signal <result$cmp_gt0010> created at line 23.
+    Found 4-bit comparator greater for signal <result$cmp_gt0011> created at line 21.
+    Found 4-bit comparator greater for signal <result$cmp_gt0012> created at line 25.
+    Found 4-bit comparator greater for signal <result$cmp_gt0013> created at line 23.
+    Found 4-bit comparator greater for signal <result$cmp_gt0014> created at line 21.
+    Found 4-bit comparator greater for signal <result$cmp_gt0015> created at line 25.
+    Found 4-bit comparator greater for signal <result$cmp_gt0016> created at line 23.
+    Found 4-bit comparator greater for signal <result$cmp_gt0017> created at line 21.
+    Found 4-bit comparator greater for signal <result$cmp_gt0018> created at line 27.
+    Found 4-bit comparator greater for signal <result$cmp_gt0019> created at line 25.
+    Found 4-bit comparator greater for signal <result$cmp_gt0020> created at line 23.
+    Found 4-bit comparator greater for signal <result$cmp_gt0021> created at line 21.
+    Found 4-bit comparator greater for signal <result$cmp_gt0022> created at line 27.
+    Found 4-bit comparator greater for signal <result$cmp_gt0023> created at line 25.
+    Found 4-bit comparator greater for signal <result$cmp_gt0024> created at line 23.
+    Found 4-bit comparator greater for signal <result$cmp_gt0025> created at line 21.
+    Summary:
+	inferred  26 Adder/Subtractor(s).
+	inferred  26 Comparator(s).
+Unit <bin2bcd> synthesized.
+
+
+Synthesizing Unit <mod_counter>.
+    Related source file is "one_second.v".
+    Found 26-bit up counter for signal <q>.
+    Found 1-bit register for signal <done>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <mod_counter> synthesized.
+
+
+Synthesizing Unit <counter_2>.
+    Related source file is "display.v".
+    Found 26-bit up counter for signal <q>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter_2> synthesized.
+
+
+Synthesizing Unit <decoder>.
+    Related source file is "display.v".
+    Found 4x4-bit ROM for signal <y>.
+    Found 4-bit 4-to-1 multiplexer for signal <val>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   4 Multiplexer(s).
+Unit <decoder> synthesized.
+
+
+Synthesizing Unit <one_second>.
+    Related source file is "one_second.v".
+WARNING:Xst:646 - Signal <clock> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <one_second> synthesized.
+
+
+Synthesizing Unit <mux41_3_luts>.
+    Related source file is "mux4.v".
+Unit <mux41_3_luts> synthesized.
+
+
+Synthesizing Unit <mux41_2_luts_no_muxf5>.
+    Related source file is "mux4.v".
+Unit <mux41_2_luts_no_muxf5> synthesized.
+
+
+Synthesizing Unit <mux41_2_luts_1_muxf5>.
+    Related source file is "mux4.v".
+Unit <mux41_2_luts_1_muxf5> synthesized.
+
+
+Synthesizing Unit <hex2_7seg_lut>.
+    Related source file is "display.v".
+Unit <hex2_7seg_lut> synthesized.
+
+
+Synthesizing Unit <display>.
+    Related source file is "display.v".
+WARNING:Xst:646 - Signal <q<25:20>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <q<17:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <display> synthesized.
+
+
+Synthesizing Unit <mux_top>.
+    Related source file is "mux4.v".
+WARNING:Xst:646 - Signal <text<15:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <selected$xor0000> created at line 94.
+    Found 1-bit xor2 for signal <selected$xor0001> created at line 94.
+    Found 1-bit xor2 for signal <selected$xor0002> created at line 94.
+Unit <mux_top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 26
+ 4-bit adder                                           : 26
+# Counters                                             : 3
+ 26-bit up counter                                     : 2
+ 6-bit up counter                                      : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Comparators                                          : 26
+ 4-bit comparator greater                              : 26
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 26
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 24
+# Counters                                             : 3
+ 26-bit up counter                                     : 2
+ 6-bit up counter                                      : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Comparators                                          : 26
+ 4-bit comparator greater                              : 26
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <T/DISP_C/q_20> of sequential type is unconnected in block <mux_top>.
+WARNING:Xst:2677 - Node <T/DISP_C/q_21> of sequential type is unconnected in block <mux_top>.
+WARNING:Xst:2677 - Node <T/DISP_C/q_22> of sequential type is unconnected in block <mux_top>.
+WARNING:Xst:2677 - Node <T/DISP_C/q_23> of sequential type is unconnected in block <mux_top>.
+WARNING:Xst:2677 - Node <T/DISP_C/q_24> of sequential type is unconnected in block <mux_top>.
+WARNING:Xst:2677 - Node <T/DISP_C/q_25> of sequential type is unconnected in block <mux_top>.
+
+Optimizing unit <mux_top> ...
+
+Optimizing unit <bin2bcd> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mux_top, actual ratio is 8.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 53
+ Flip-Flops                                            : 53
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : mux_top.ngr
+Top Level Output File Name         : mux_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 21
+
+Cell Usage :
+# BELS                             : 241
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 44
+#      LUT2                        : 36
+#      LUT3                        : 4
+#      LUT4                        : 43
+#      LUT4_D                      : 1
+#      MUXCY                       : 53
+#      MUXF5                       : 9
+#      VCC                         : 1
+#      XORCY                       : 46
+# FlipFlops/Latches                : 53
+#      FDC                         : 47
+#      FDCE                        : 6
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 20
+#      IBUF                        : 1
+#      OBUF                        : 19
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                       73  out of    960     7%  
+ Number of Slice Flip Flops:             53  out of   1920     2%  
+ Number of 4 input LUTs:                131  out of   1920     6%  
+ Number of IOs:                          21
+ Number of bonded IOBs:                  21  out of     83    25%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK1                               | BUFGP                  | 53    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+arst                               | IBUF                   | 53    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.251ns (Maximum Frequency: 190.424MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 11.241ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK1'
+  Clock period: 5.251ns (frequency: 190.424MHz)
+  Total number of paths / destination ports: 1290 / 59
+-------------------------------------------------------------------------
+Delay:               5.251ns (Levels of Logic = 27)
+  Source:            ONE/ONE_MC/q_1 (FF)
+  Destination:       ONE/ONE_MC/q_25 (FF)
+  Source Clock:      CLK1 rising
+  Destination Clock: CLK1 rising
+
+  Data Path: ONE/ONE_MC/q_1 to ONE/ONE_MC/q_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.532  ONE/ONE_MC/q_1 (ONE/ONE_MC/q_1)
+     LUT1:I0->O            1   0.612   0.000  ONE/ONE_MC/Mcount_q_cy<1>_rt (ONE/ONE_MC/Mcount_q_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  ONE/ONE_MC/Mcount_q_cy<1> (ONE/ONE_MC/Mcount_q_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<2> (ONE/ONE_MC/Mcount_q_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<3> (ONE/ONE_MC/Mcount_q_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<4> (ONE/ONE_MC/Mcount_q_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<5> (ONE/ONE_MC/Mcount_q_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<6> (ONE/ONE_MC/Mcount_q_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<7> (ONE/ONE_MC/Mcount_q_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<8> (ONE/ONE_MC/Mcount_q_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<9> (ONE/ONE_MC/Mcount_q_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<10> (ONE/ONE_MC/Mcount_q_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<11> (ONE/ONE_MC/Mcount_q_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<12> (ONE/ONE_MC/Mcount_q_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<13> (ONE/ONE_MC/Mcount_q_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<14> (ONE/ONE_MC/Mcount_q_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<15> (ONE/ONE_MC/Mcount_q_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<16> (ONE/ONE_MC/Mcount_q_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<17> (ONE/ONE_MC/Mcount_q_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<18> (ONE/ONE_MC/Mcount_q_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<19> (ONE/ONE_MC/Mcount_q_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<20> (ONE/ONE_MC/Mcount_q_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<21> (ONE/ONE_MC/Mcount_q_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<22> (ONE/ONE_MC/Mcount_q_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<23> (ONE/ONE_MC/Mcount_q_cy<23>)
+     MUXCY:CI->O           0   0.052   0.000  ONE/ONE_MC/Mcount_q_cy<24> (ONE/ONE_MC/Mcount_q_cy<24>)
+     XORCY:CI->O           1   0.699   0.426  ONE/ONE_MC/Mcount_q_xor<25> (Result<25>)
+     LUT2:I1->O            1   0.612   0.000  ONE/ONE_MC/Mcount_q_eqn_251 (ONE/ONE_MC/Mcount_q_eqn_25)
+     FDC:D                     0.268          ONE/ONE_MC/q_25
+    ----------------------------------------
+    Total                      5.251ns (4.294ns logic, 0.958ns route)
+                                       (81.8% logic, 18.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK1'
+  Total number of paths / destination ports: 782 / 16
+-------------------------------------------------------------------------
+Offset:              11.241ns (Levels of Logic = 8)
+  Source:            CNT/q_4 (FF)
+  Destination:       seg<0> (PAD)
+  Source Clock:      CLK1 rising
+
+  Data Path: CNT/q_4 to seg<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            25   0.514   1.101  CNT/q_4 (CNT/q_4)
+     LUT4:I2->O            1   0.612   0.000  MUX4_3/L1 (MUX4_3/l1)
+     MUXCY:S->O            0   0.752   0.000  MUX4_3/CY1 (MUX4_3/o1)
+     MUXCY:DI->O           1   1.121   0.360  MUX4_3/CY2 (selected3)
+     LUT4:I3->O            1   0.612   0.000  T/zero_to_f_counter<0>1191 (T/zero_to_f_counter<0>1191)
+     MUXF5:I0->O           1   0.278   0.387  T/zero_to_f_counter<0>119_f5 (T/zero_to_f_counter<0>119)
+     LUT4:I2->O            7   0.612   0.754  T/zero_to_f_counter<0>149 (T/zero_to_f_counter<0>)
+     LUT4:I0->O            1   0.612   0.357  T/DISP_H/CA (seg_0_OBUF)
+     OBUF:I->O                 3.169          seg_0_OBUF (seg<0>)
+    ----------------------------------------
+    Total                     11.241ns (8.282ns logic, 2.959ns route)
+                                       (73.7% logic, 26.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.38 secs
+ 
+--> 
+
+Total memory usage is 153452 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   20 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

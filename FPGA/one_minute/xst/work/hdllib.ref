@@ -1,0 +1,4 @@
+MO hex2_7seg_lut NULL hex2_7seg_lut.v vlg4C/hex2__7seg__lut.bin 1392685905
+MO mod_counter NULL oneminute.v vlg77/mod__counter.bin 1392685905
+MO counter NULL oneminute.v vlg10/counter.bin 1392685905
+MO oneminute NULL oneminute.v vlg28/oneminute.bin 1392685905

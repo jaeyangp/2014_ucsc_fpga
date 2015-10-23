@@ -1,0 +1,74 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Map Application Log File for Design 'add16'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off
+-c 100 -o add16_map.ncd add16.ngd add16.pcf 
+Target Device  : xc3s100e
+Target Package : cp132
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Wed Mar 19 17:33:03 2014
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:           134 out of   1,920    6%
+  Number of 4 input LUTs:               366 out of   1,920   19%
+Logic Distribution:
+  Number of occupied Slices:            229 out of     960   23%
+    Number of Slices containing only related logic:     229 out of     229 100%
+    Number of Slices containing unrelated logic:          0 out of     229   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         412 out of   1,920   21%
+    Number used as logic:               298
+    Number used as a route-thru:         46
+    Number used for Dual Port RAMs:      16
+      (Two LUTs used per Dual Port RAM)
+    Number used for 32x1 RAMs:           52
+      (Two LUTs used per 32x1 RAM)
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 21 out of      83   25%
+  Number of RAMB16s:                      1 out of       4   25%
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+Average Fanout of Non-Clock Nets:                3.61
+
+Peak Memory Usage:  156 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "add16_map.mrp" for details.

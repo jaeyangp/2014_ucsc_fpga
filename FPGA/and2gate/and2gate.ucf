@@ -1,0 +1,8 @@
+# FILE:and2gate.ucf
+
+# Pin assignment for SWITCHES
+NET "sw<7>" LOC = "N3";  
+NET "sw<6>" LOC = "E2";  
+
+# Pin assignment for LEDs
+NET "Led<4>" LOC = "N5" ; 

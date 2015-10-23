@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/Users/dalsook/FPGA/xor3gate/s3_xor3gate.xst" -ofn "C:/Users/dalsook/FPGA/xor3gate/s3_xor3gate.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xor3gate.ucf -p xc3s100e-cp132-5 s3_xor3gate.ngc s3_xor3gate.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o s3_xor3gate_map.ncd s3_xor3gate.ngd s3_xor3gate.pcf 
+par -w -intstyle ise -ol high -t 1 s3_xor3gate_map.ncd s3_xor3gate.ncd s3_xor3gate.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml s3_xor3gate.twx s3_xor3gate.ncd -o s3_xor3gate.twr s3_xor3gate.pcf -ucf xor3gate.ucf 
+bitgen -intstyle ise -f s3_xor3gate.ut s3_xor3gate.ncd 
+xst -intstyle ise -ifn "C:/Users/dalsook/FPGA/xor3gate/s3_xor3gate.xst" -ofn "C:/Users/dalsook/FPGA/xor3gate/s3_xor3gate.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xor3gate.ucf -p xc3s100e-cp132-5 s3_xor3gate.ngc s3_xor3gate.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o s3_xor3gate_map.ncd s3_xor3gate.ngd s3_xor3gate.pcf 
+par -w -intstyle ise -ol high -t 1 s3_xor3gate_map.ncd s3_xor3gate.ncd s3_xor3gate.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml s3_xor3gate.twx s3_xor3gate.ncd -o s3_xor3gate.twr s3_xor3gate.pcf -ucf xor3gate.ucf 
+bitgen -intstyle ise -f s3_xor3gate.ut s3_xor3gate.ncd 
+xst -intstyle ise -ifn "C:/Users/dalsook/FPGA/xor3gate/s3_xor3gate.xst" -ofn "C:/Users/dalsook/FPGA/xor3gate/s3_xor3gate.syr" 

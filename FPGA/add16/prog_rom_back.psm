@@ -1,0 +1,60 @@
+; prog_rom.psm
+; UCSC Extension - Digital Design with FPGA
+; Jae-Yang Park
+; jaeyangp@gmail.com
+;
+; input: 0: not reached one sec. 1: one sec happened
+; output: ans_l --> OUTPUTPORT_L
+;         ans_h --> OUTPUTPORT_H
+;         {ans_h, ans_l} is 16 bit result
+
+; input and output port
+constant INPUTPORT, 00		; '1' at every one second
+constant OUTPUTPORT_L, 01	; LSB portion of result
+constant OUTPUTPORT_H, 02	; MSB portion of result
+
+; register alias
+namereg s0, indata
+namereg s1, startdata		; inclement value
+namereg s2, ans_l			; LSB of result
+namereg s3, ans_h			; MSB of result
+
+;	
+; main program	
+;
+main:
+	load ans_l, 04			; start number
+	load ans_h, 00			; clear the MSB of result
+	call display			; result through output port
+;	
+calc:	
+	input indata, INPUTPORT
+	call add_num			; add ans + increment values
+	call display			; send result through output port to display
+	compare ans_h, 27		; check if result reached 9999 (270fh)
+	jump c, calc			; ans_h < 9984
+;	
+next_chk:					; ans_h > 9984
+	compare ans_l, 0f		; check if ans_l > 15, 9984+15 = 9999
+	jump nc, main			; yes, result is reached 9999
+	jump calc				; no, result is not reached 9999
+
+; send results through output port
+display:
+	output ans_l, OUTPUTPORT_L	; LSB
+	output ans_h, OUTPUTPORT_H	; MSB
+	return
+;
+; add numbers
+; ans_l = ans_l + startdata
+add_num:
+	compare indata, 00		; 1: one sec is happened, 0 is not
+	jump nz, add_num1		; no one sec, then return, or go to add number
+	return			
+;	
+add_num1:
+	load startdata, 23		; increment at a distance of 35
+	add ans_l, startdata	; add LSB with startdata
+	addcy ans_h, 00			; add MSB with carry
+	return					; {ans_h, ans_l} is complete 16 bits result
+

@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Jan 27 19:49:57 2014
+# Process ID: 5228
+# Log file: C:/Users/dalsook/FPGA/xor3gate/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/dalsook/FPGA/xor3gate/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/dalsook/FPGA/xor3gate/pa.fromNetlist.tcl
+# create_project -name xor3gate -dir "C:/Users/dalsook/FPGA/xor3gate/planAhead_run_3" -part xc3s100ecp132-5
+create_project: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 399.125 ; gain = 68.781
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Users/dalsook/FPGA/xor3gate/s3_xor3gate.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/dalsook/FPGA/xor3gate} }
+# set_property target_constrs_file "xor3gate.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/dalsook/FPGA/xor3gate/xor3gate.ucf' to fileset 'constrs_1'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'source' was cancelled
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See C:/Users/dalsook/FPGA/xor3gate\planAhead_pid5228.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Jan 27 19:50:52 2014...
+INFO: [Common 17-83] Releasing license: PlanAhead

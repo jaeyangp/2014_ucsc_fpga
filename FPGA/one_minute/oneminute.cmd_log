@@ -1,0 +1,29 @@
+xst -intstyle ise -ifn "D:/FPGA/one_minute/oneminute.xst" -ofn "D:/FPGA/one_minute/oneminute.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 oneminute.ngc oneminute.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o oneminute_map.ncd oneminute.ngd oneminute.pcf 
+par -w -intstyle ise -ol high -t 1 oneminute_map.ncd oneminute.ncd oneminute.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml oneminute.twx oneminute.ncd -o oneminute.twr oneminute.pcf 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 oneminute.ngc oneminute.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o oneminute_map.ncd oneminute.ngd oneminute.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml oneminute_preroute.twx oneminute_map.ncd -o oneminute_preroute.twr oneminute.pcf -ucf D:/FPGA/board.ucf 
+netgen -intstyle ise -s 5  -pcf oneminute.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim oneminute_map.ncd oneminute_map.v 
+par -w -intstyle ise -ol high -t 1 oneminute_map.ncd oneminute.ncd oneminute.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml oneminute.twx oneminute.ncd -o oneminute.twr oneminute.pcf 
+xst -intstyle ise -ifn "D:/FPGA/one_minute/oneminute.xst" -ofn "D:/FPGA/one_minute/oneminute.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 oneminute.ngc oneminute.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o oneminute_map.ncd oneminute.ngd oneminute.pcf 
+par -w -intstyle ise -ol high -t 1 oneminute_map.ncd oneminute.ncd oneminute.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml oneminute.twx oneminute.ncd -o oneminute.twr oneminute.pcf 
+bitgen -intstyle ise -f oneminute.ut oneminute.ncd 
+xst -intstyle ise -ifn "D:/FPGA/one_minute/oneminute.xst" -ofn "D:/FPGA/one_minute/oneminute.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 oneminute.ngc oneminute.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o oneminute_map.ncd oneminute.ngd oneminute.pcf 
+par -w -intstyle ise -ol high -t 1 oneminute_map.ncd oneminute.ncd oneminute.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml oneminute.twx oneminute.ncd -o oneminute.twr oneminute.pcf 
+bitgen -intstyle ise -f oneminute.ut oneminute.ncd 
+xst -intstyle ise -ifn "D:/FPGA/one_minute/oneminute.xst" -ofn "D:/FPGA/one_minute/oneminute.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc D:/FPGA/board.ucf -p xc3s100e-cp132-5 oneminute.ngc oneminute.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o oneminute_map.ncd oneminute.ngd oneminute.pcf 
+par -w -intstyle ise -ol high -t 1 oneminute_map.ncd oneminute.ncd oneminute.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml oneminute.twx oneminute.ncd -o oneminute.twr oneminute.pcf 
+bitgen -intstyle ise -f oneminute.ut oneminute.ncd 

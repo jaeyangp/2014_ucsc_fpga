@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "C:/Users/dalsook/FPGA/hex2_7seg/s3_hex2_7seg.xst" -ofn "C:/Users/dalsook/FPGA/hex2_7seg/s3_hex2_7seg.syr" 
+xst -intstyle ise -ifn "C:/Users/dalsook/FPGA/hex2_7seg/s3_hex2_7seg.xst" -ofn "C:/Users/dalsook/FPGA/hex2_7seg/s3_hex2_7seg.syr" 
+xst -intstyle ise -ifn "C:/Users/dalsook/FPGA/hex2_7seg/s3_hex2_7seg.xst" -ofn "C:/Users/dalsook/FPGA/hex2_7seg/s3_hex2_7seg.syr" 
+xst -intstyle ise -ifn "C:/Users/dalsook/FPGA/hex2_7seg/s3_hex2_7seg.xst" -ofn "C:/Users/dalsook/FPGA/hex2_7seg/s3_hex2_7seg.syr" 
+xst -intstyle ise -ifn "C:/Users/dalsook/FPGA/hex2_7seg/s3_hex2_7seg.xst" -ofn "C:/Users/dalsook/FPGA/hex2_7seg/s3_hex2_7seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/dalsook/FPGA/board.ucf -p xc3s100e-cp132-5 s3_hex2_7seg.ngc s3_hex2_7seg.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o s3_hex2_7seg_map.ncd s3_hex2_7seg.ngd s3_hex2_7seg.pcf 
+par -w -intstyle ise -ol high -t 1 s3_hex2_7seg_map.ncd s3_hex2_7seg.ncd s3_hex2_7seg.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml s3_hex2_7seg.twx s3_hex2_7seg.ncd -o s3_hex2_7seg.twr s3_hex2_7seg.pcf 
+bitgen -intstyle ise -f s3_hex2_7seg.ut s3_hex2_7seg.ncd 
+xst -intstyle ise -ifn "C:/Users/dalsook/FPGA/hex2_7seg/s3_hex2_7seg.xst" -ofn "C:/Users/dalsook/FPGA/hex2_7seg/s3_hex2_7seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc C:/Users/dalsook/FPGA/board.ucf -p xc3s100e-cp132-5 s3_hex2_7seg.ngc s3_hex2_7seg.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o s3_hex2_7seg_map.ncd s3_hex2_7seg.ngd s3_hex2_7seg.pcf 
+par -w -intstyle ise -ol high -t 1 s3_hex2_7seg_map.ncd s3_hex2_7seg.ncd s3_hex2_7seg.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml s3_hex2_7seg.twx s3_hex2_7seg.ncd -o s3_hex2_7seg.twr s3_hex2_7seg.pcf 
+bitgen -intstyle ise -f s3_hex2_7seg.ut s3_hex2_7seg.ncd 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\FPGA\one_minute\oneminute.ncd
+OUTFILE=D:\FPGA\one_minute\oneminute.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=D:\FPGA\one_minute
+LICENSE=WebPack
+USER_INFO=210845836_0_0_050

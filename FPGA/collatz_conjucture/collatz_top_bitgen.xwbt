@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\FPGA\collatz_conjucture\collatz_top.ncd
+OUTFILE=D:\FPGA\collatz_conjucture\collatz_top.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=D:\FPGA\collatz_conjucture
+LICENSE=WebPack
+USER_INFO=210845836_0_0_050

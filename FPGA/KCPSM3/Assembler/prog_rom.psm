@@ -1,0 +1,7 @@
+; prog_rom.psm
+; move data from input port 00 to register 50
+INPUT s0,00
+; move data from register s0 to output 02
+OUTPUT s0,02
+; loop
+JUMP 000

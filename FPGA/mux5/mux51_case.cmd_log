@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/FPGA/mux5/mux51_case.xst" -ofn "D:/FPGA/mux5/mux51_case.syr" 
+xst -intstyle ise -ifn "D:/FPGA/mux5/mux51_case.xst" -ofn "D:/FPGA/mux5/mux51_case.syr" 
+xst -intstyle ise -ifn "D:/FPGA/mux5/mux51_case.xst" -ofn "D:/FPGA/mux5/mux51_case.syr" 
+xst -intstyle ise -ifn "D:/FPGA/mux5/mux51_case.xst" -ofn "D:/FPGA/mux5/mux51_case.syr" 

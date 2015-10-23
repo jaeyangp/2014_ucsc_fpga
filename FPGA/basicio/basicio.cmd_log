@@ -1,0 +1,55 @@
+xst -intstyle ise -ifn "D:/FPGA/basicio/basicio.xst" -ofn "D:/FPGA/basicio/basicio.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc board.ucf -p xc3s100e-cp132-5 basicio.ngc basicio.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o basicio_map.ncd basicio.ngd basicio.pcf 
+par -w -intstyle ise -ol high -t 1 basicio_map.ncd basicio.ncd basicio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml basicio.twx basicio.ncd -o basicio.twr basicio.pcf -ucf board.ucf 
+bitgen -intstyle ise -f basicio.ut basicio.ncd 
+xst -intstyle ise -ifn "D:/FPGA/basicio/basicio.xst" -ofn "D:/FPGA/basicio/basicio.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc board.ucf -p xc3s100e-cp132-5 basicio.ngc basicio.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o basicio_map.ncd basicio.ngd basicio.pcf 
+par -w -intstyle ise -ol high -t 1 basicio_map.ncd basicio.ncd basicio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml basicio.twx basicio.ncd -o basicio.twr basicio.pcf -ucf board.ucf 
+bitgen -intstyle ise -f basicio.ut basicio.ncd 
+xst -intstyle ise -ifn "D:/FPGA/basicio/basicio.xst" -ofn "D:/FPGA/basicio/basicio.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc board.ucf -p xc3s100e-cp132-5 basicio.ngc basicio.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o basicio_map.ncd basicio.ngd basicio.pcf 
+par -w -intstyle ise -ol high -t 1 basicio_map.ncd basicio.ncd basicio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml basicio.twx basicio.ncd -o basicio.twr basicio.pcf -ucf board.ucf 
+bitgen -intstyle ise -f basicio.ut basicio.ncd 
+bitgen -intstyle ise -f basicio.ut basicio.ncd 
+xst -intstyle ise -ifn "D:/FPGA/basicio/basicio.xst" -ofn "D:/FPGA/basicio/basicio.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc board.ucf -p xc3s100e-cp132-5 basicio.ngc basicio.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o basicio_map.ncd basicio.ngd basicio.pcf 
+par -w -intstyle ise -ol high -t 1 basicio_map.ncd basicio.ncd basicio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml basicio.twx basicio.ncd -o basicio.twr basicio.pcf -ucf board.ucf 
+bitgen -intstyle ise -f basicio.ut basicio.ncd 
+xst -intstyle ise -ifn "D:/FPGA/basicio/basicio.xst" -ofn "D:/FPGA/basicio/basicio.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc board.ucf -p xc3s100e-cp132-5 basicio.ngc basicio.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o basicio_map.ncd basicio.ngd basicio.pcf 
+par -w -intstyle ise -ol high -t 1 basicio_map.ncd basicio.ncd basicio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml basicio.twx basicio.ncd -o basicio.twr basicio.pcf -ucf board.ucf 
+bitgen -intstyle ise -f basicio.ut basicio.ncd 
+xst -intstyle ise -ifn "D:/FPGA/basicio/basicio.xst" -ofn "D:/FPGA/basicio/basicio.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc board.ucf -p xc3s100e-cp132-5 basicio.ngc basicio.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o basicio_map.ncd basicio.ngd basicio.pcf 
+par -w -intstyle ise -ol high -t 1 basicio_map.ncd basicio.ncd basicio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml basicio.twx basicio.ncd -o basicio.twr basicio.pcf -ucf board.ucf 
+bitgen -intstyle ise -f basicio.ut basicio.ncd 
+xst -intstyle ise -ifn "D:/FPGA/basicio/basicio.xst" -ofn "D:/FPGA/basicio/basicio.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc board.ucf -p xc3s100e-cp132-5 basicio.ngc basicio.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o basicio_map.ncd basicio.ngd basicio.pcf 
+par -w -intstyle ise -ol high -t 1 basicio_map.ncd basicio.ncd basicio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml basicio.twx basicio.ncd -o basicio.twr basicio.pcf -ucf board.ucf 
+bitgen -intstyle ise -f basicio.ut basicio.ncd 
+xst -intstyle ise -ifn "D:/FPGA/basicio/basicio.xst" -ofn "D:/FPGA/basicio/basicio.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc board.ucf -p xc3s100e-cp132-5 basicio.ngc basicio.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o basicio_map.ncd basicio.ngd basicio.pcf 
+par -w -intstyle ise -ol high -t 1 basicio_map.ncd basicio.ncd basicio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml basicio.twx basicio.ncd -o basicio.twr basicio.pcf -ucf board.ucf 
+bitgen -intstyle ise -f basicio.ut basicio.ncd 
+xst -intstyle ise -ifn "D:/FPGA/basicio/basicio.xst" -ofn "D:/FPGA/basicio/basicio.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc board.ucf -p xc3s100e-cp132-5 basicio.ngc basicio.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o basicio_map.ncd basicio.ngd basicio.pcf 
+par -w -intstyle ise -ol high -t 1 basicio_map.ncd basicio.ncd basicio.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml basicio.twx basicio.ncd -o basicio.twr basicio.pcf -ucf board.ucf 
+bitgen -intstyle ise -f basicio.ut basicio.ncd 

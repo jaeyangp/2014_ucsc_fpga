@@ -1,0 +1,60 @@
+#:C13    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   D:\FPGA\one_minute
+#Date/Time:
+#:T   Mon Feb 17 12:00:59 2014
+#------------------------------
+	#Reading oneminute_map.ncd...
+	#Loading device for application Rf_Device from file '3s100e.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "oneminute" is an NCD, version 3.2, device xc3s100e, package cp132, speed -5
+	#Design creation date: 2014.02.17.20.00.19
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'CLK1'
+	#3
+add
+	#WARNING:FPGAEditor:131 - The selection contains objects that are being ignored by the add command.
+	#WARNING:FPGAEditor:132 - The add command did not find anything to add.
+	#4
+unselect -all
+	#5
+select -k comp 'CLK1'
+	#6
+unselect -all
+	#7
+select arc 'IOBOUTPUT(-592,39824)--->DUMMYESC(-751,39824)'
+	#arc "IOBOUTPUT(-592,39824)--->DUMMYESC(-751,39824)"
+	#8
+unselect -all
+	#9
+select arc 'IOBOUTPUT(-592,39824)--->DUMMYESC(-751,39824)'
+	#arc "IOBOUTPUT(-592,39824)--->DUMMYESC(-751,39824)"
+	#10
+unselect -all
+	#11
+select arc 'IOBOUTPUT(-592,39824)--->DUMMYESC(-751,39824)'
+	#arc "IOBOUTPUT(-592,39824)--->DUMMYESC(-751,39824)"
+	#12
+post block
+	#ERROR:FPGAEditor:79 - The "post block" command without any other arguments cannot
+	#be performed unless the selection contains only a single site
+	#or single component.  Change the selection and try again.
+	#13
+unselect -all
+	#14
+refresh
+	#15
+unselect -all
+	#16
+select wire 'IOBOUTPUT(-592,39824)'
+	#node = IOBOUTPUT(-592,39824)
+	#17
+unselect wire 'IOBOUTPUT(-592,39824)'
+	#18
+select -k comp 'an<3>'

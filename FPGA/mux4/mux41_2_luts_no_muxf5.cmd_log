@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/FPGA/mux4/mux41_2_luts_no_muxf5.xst" -ofn "D:/FPGA/mux4/mux41_2_luts_no_muxf5.syr" 

@@ -1,0 +1,445 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: oneminute.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "oneminute.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "oneminute"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : oneminute
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "hex2_7seg_lut.v" in library work
+Compiling verilog file "oneminute.v" in library work
+Module <hex2_7seg_lut> compiled
+Module <counter> compiled
+Module <mod_counter> compiled
+Module <oneminute> compiled
+No errors in compilation
+Analysis of file <"oneminute.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <oneminute> in library <work> with parameters.
+	C = "00000000000000000000000000100001"
+	CRYSTAL = "00000000000000000000000000110010"
+	N = "00000000000000000000000000000111"
+	NUM_SEC = "00000000000000000000000000111100"
+	STOPAT = "010110010110100000101110111111111"
+	W = "00000000000000000000000000000100"
+
+Analyzing hierarchy for module <mod_counter> in library <work> with parameters.
+	MAX = "010110010110100000101110111111111"
+	N = "00000000000000000000000000100001"
+
+Analyzing hierarchy for module <counter> in library <work> with parameters.
+	N = "00000000000000000000000000000100"
+
+Analyzing hierarchy for module <hex2_7seg_lut> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <oneminute>.
+	C = 32'sb00000000000000000000000000100001
+	CRYSTAL = 32'sb00000000000000000000000000110010
+	N = 32'sb00000000000000000000000000000111
+	NUM_SEC = 32'sb00000000000000000000000000111100
+	STOPAT = 33'b010110010110100000101110111111111
+	W = 32'sb00000000000000000000000000000100
+Module <oneminute> is correct for synthesis.
+ 
+Analyzing module <mod_counter> in library <work>.
+	MAX = 33'b010110010110100000101110111111111
+	N = 32'sb00000000000000000000000000100001
+Module <mod_counter> is correct for synthesis.
+ 
+Analyzing module <counter> in library <work>.
+	N = 32'sb00000000000000000000000000000100
+Module <counter> is correct for synthesis.
+ 
+Analyzing module <hex2_7seg_lut> in library <work>.
+Module <hex2_7seg_lut> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  2812" for instance <CA> in unit <hex2_7seg_lut>.
+    Set user-defined property "INIT =  D860" for instance <CB> in unit <hex2_7seg_lut>.
+    Set user-defined property "INIT =  D004" for instance <CC> in unit <hex2_7seg_lut>.
+    Set user-defined property "INIT =  8492" for instance <CD> in unit <hex2_7seg_lut>.
+    Set user-defined property "INIT =  02BA" for instance <CE> in unit <hex2_7seg_lut>.
+    Set user-defined property "INIT =  208E" for instance <CF> in unit <hex2_7seg_lut>.
+    Set user-defined property "INIT =  1083" for instance <CG> in unit <hex2_7seg_lut>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mod_counter>.
+    Related source file is "oneminute.v".
+    Found 33-bit up counter for signal <q>.
+    Found 1-bit register for signal <done>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <mod_counter> synthesized.
+
+
+Synthesizing Unit <counter>.
+    Related source file is "oneminute.v".
+    Found 4-bit up counter for signal <q>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter> synthesized.
+
+
+Synthesizing Unit <hex2_7seg_lut>.
+    Related source file is "hex2_7seg_lut.v".
+Unit <hex2_7seg_lut> synthesized.
+
+
+Synthesizing Unit <oneminute>.
+    Related source file is "oneminute.v".
+WARNING:Xst:646 - Signal <clock> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <oneminute> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 33-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 33-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <oneminute> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block oneminute, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 38
+ Flip-Flops                                            : 38
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : oneminute.ngr
+Top Level Output File Name         : oneminute
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 17
+
+Cell Usage :
+# BELS                             : 162
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 33
+#      LUT2                        : 34
+#      LUT3                        : 1
+#      LUT4                        : 16
+#      MUXCY                       : 41
+#      VCC                         : 1
+#      XORCY                       : 33
+# FlipFlops/Latches                : 38
+#      FDC                         : 34
+#      FDCE                        : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 1
+#      OBUF                        : 15
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                       47  out of    960     4%  
+ Number of Slice Flip Flops:             38  out of   1920     1%  
+ Number of 4 input LUTs:                 86  out of   1920     4%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of     83    20%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK1                               | BUFGP                  | 38    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+arst                               | IBUF                   | 38    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.612ns (Maximum Frequency: 178.191MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 5.621ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK1'
+  Clock period: 5.612ns (frequency: 178.191MHz)
+  Total number of paths / destination ports: 1697 / 42
+-------------------------------------------------------------------------
+Delay:               5.612ns (Levels of Logic = 34)
+  Source:            U1/q_1 (FF)
+  Destination:       U1/q_32 (FF)
+  Source Clock:      CLK1 rising
+  Destination Clock: CLK1 rising
+
+  Data Path: U1/q_1 to U1/q_32
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.532  U1/q_1 (U1/q_1)
+     LUT1:I0->O            1   0.612   0.000  U1/Mcount_q_cy<1>_rt (U1/Mcount_q_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  U1/Mcount_q_cy<1> (U1/Mcount_q_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<2> (U1/Mcount_q_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<3> (U1/Mcount_q_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<4> (U1/Mcount_q_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<5> (U1/Mcount_q_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<6> (U1/Mcount_q_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<7> (U1/Mcount_q_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<8> (U1/Mcount_q_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<9> (U1/Mcount_q_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<10> (U1/Mcount_q_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<11> (U1/Mcount_q_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<12> (U1/Mcount_q_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<13> (U1/Mcount_q_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<14> (U1/Mcount_q_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<15> (U1/Mcount_q_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<16> (U1/Mcount_q_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<17> (U1/Mcount_q_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<18> (U1/Mcount_q_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<19> (U1/Mcount_q_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<20> (U1/Mcount_q_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<21> (U1/Mcount_q_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<22> (U1/Mcount_q_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<23> (U1/Mcount_q_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<24> (U1/Mcount_q_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<25> (U1/Mcount_q_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<26> (U1/Mcount_q_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<27> (U1/Mcount_q_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<28> (U1/Mcount_q_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<29> (U1/Mcount_q_cy<29>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<30> (U1/Mcount_q_cy<30>)
+     MUXCY:CI->O           0   0.052   0.000  U1/Mcount_q_cy<31> (U1/Mcount_q_cy<31>)
+     XORCY:CI->O           1   0.699   0.426  U1/Mcount_q_xor<32> (Result<32>)
+     LUT2:I1->O            1   0.612   0.000  U1/Mcount_q_eqn_321 (U1/Mcount_q_eqn_32)
+     FDC:D                     0.268          U1/q_32
+    ----------------------------------------
+    Total                      5.612ns (4.654ns logic, 0.958ns route)
+                                       (82.9% logic, 17.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK1'
+  Total number of paths / destination ports: 32 / 11
+-------------------------------------------------------------------------
+Offset:              5.621ns (Levels of Logic = 2)
+  Source:            S/q_0 (FF)
+  Destination:       seg<0> (PAD)
+  Source Clock:      CLK1 rising
+
+  Data Path: S/q_0 to seg<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            12   0.514   0.969  S/q_0 (S/q_0)
+     LUT4:I0->O            1   0.612   0.357  D/CG (seg_6_OBUF)
+     OBUF:I->O                 3.169          seg_6_OBUF (seg<6>)
+    ----------------------------------------
+    Total                      5.621ns (4.295ns logic, 1.326ns route)
+                                       (76.4% logic, 23.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.50 secs
+ 
+--> 
+
+Total memory usage is 151404 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

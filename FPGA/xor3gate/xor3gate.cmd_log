@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/dalsook/FPGA/xor3gate/xor3gate.xst" -ofn "C:/Users/dalsook/FPGA/xor3gate/xor3gate.syr" 
+xst -intstyle ise -ifn "C:/Users/dalsook/FPGA/xor3gate/xor3gate.xst" -ofn "C:/Users/dalsook/FPGA/xor3gate/xor3gate.syr" 
+xst -intstyle ise -ifn "C:/Users/dalsook/FPGA/xor3gate/xor3gate.xst" -ofn "C:/Users/dalsook/FPGA/xor3gate/xor3gate.syr" 

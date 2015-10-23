@@ -1,0 +1,5 @@
+MO basicio NULL basicio.v vlg36/basicio.bin 1395025408
+MO hex2_7seg_lut NULL hex2seg.v vlg4C/hex2__7seg__lut.bin 1395025408
+MO prog_rom NULL PROG_ROM.V vlg41/prog__rom.bin 1395025408
+MO kcpsm3 NULL kcpsm3.v vlg19/kcpsm3.bin 1395025408
+MO embedded_kcpsm3 NULL embedded_kcpsm3.v vlg12/embedded__kcpsm3.bin 1395025408

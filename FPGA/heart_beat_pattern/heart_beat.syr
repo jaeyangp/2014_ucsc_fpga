@@ -1,0 +1,441 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: heart_beat.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "heart_beat.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "heart_beat"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : heart_beat
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "heart_beat.v" in library work
+Module <mod_counter> compiled
+Module <heart_beat> compiled
+No errors in compilation
+Analysis of file <"heart_beat.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <heart_beat> in library <work> with parameters.
+	C = "00000000000000000000000000011011"
+	CRYSTAL = "00000000000000000000000000110010"
+	N = "00000000000000000000000000000111"
+	NUM_SEC = "00000000000000000000000000000001"
+	STOPAT = "00000010111110101111000001111111"
+
+Analyzing hierarchy for module <mod_counter> in library <work> with parameters.
+	MAX = "00000010111110101111000001111111"
+	N = "00000000000000000000000000011011"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <heart_beat>.
+	C = 32'sb00000000000000000000000000011011
+	CRYSTAL = 32'sb00000000000000000000000000110010
+	N = 32'sb00000000000000000000000000000111
+	NUM_SEC = 32'sb00000000000000000000000000000001
+	STOPAT = 32'sb00000010111110101111000001111111
+Module <heart_beat> is correct for synthesis.
+ 
+Analyzing module <mod_counter> in library <work>.
+	MAX = 32'sb00000010111110101111000001111111
+	N = 32'sb00000000000000000000000000011011
+Module <mod_counter> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mod_counter>.
+    Related source file is "heart_beat.v".
+    Found 27-bit up counter for signal <q>.
+    Found 1-bit register for signal <done>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <mod_counter> synthesized.
+
+
+Synthesizing Unit <heart_beat>.
+    Related source file is "heart_beat.v".
+    Found 4-bit register for signal <an>.
+    Found 7-bit register for signal <seg>.
+    Found 4-bit register for signal <down_an>.
+    Found 3-bit up counter for signal <shift_count>.
+    Found 4-bit register for signal <up_an>.
+    Found 1-bit register for signal <up_down>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   5 D-type flip-flop(s).
+Unit <heart_beat> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 27-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 6
+ 1-bit register                                        : 2
+ 4-bit register                                        : 3
+ 7-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <seg>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 27-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 21
+ Flip-Flops                                            : 21
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <seg_5> in Unit <heart_beat> is equivalent to the following 2 FFs/Latches, which will be removed : <seg_6> <seg_1> 
+INFO:Xst:2261 - The FF/Latch <seg_4> in Unit <heart_beat> is equivalent to the following 2 FFs/Latches, which will be removed : <seg_3> <seg_2> 
+WARNING:Xst:1710 - FF/Latch <seg_0> (without init value) has a constant value of 0 in block <heart_beat>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <heart_beat> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block heart_beat, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 46
+ Flip-Flops                                            : 46
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : heart_beat.ngr
+Top Level Output File Name         : heart_beat
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 140
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 26
+#      LUT2                        : 28
+#      LUT3                        : 6
+#      LUT4                        : 15
+#      MUXCY                       : 33
+#      VCC                         : 1
+#      XORCY                       : 27
+# FlipFlops/Latches                : 46
+#      FDC                         : 32
+#      FDCE                        : 3
+#      FDP                         : 5
+#      FDPE                        : 6
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 1
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                       45  out of    960     4%  
+ Number of Slice Flip Flops:             46  out of   1920     2%  
+ Number of 4 input LUTs:                 78  out of   1920     4%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of     83    15%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+U1/done                            | NONE(an_0)             | 18    |
+CLK1                               | BUFGP                  | 28    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+arst                               | IBUF                   | 46    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.303ns (Maximum Frequency: 188.574MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.134ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/done'
+  Clock period: 2.971ns (frequency: 336.621MHz)
+  Total number of paths / destination ports: 65 / 27
+-------------------------------------------------------------------------
+Delay:               2.971ns (Levels of Logic = 1)
+  Source:            up_down (FF)
+  Destination:       up_an_3 (FF)
+  Source Clock:      U1/done rising
+  Destination Clock: U1/done rising
+
+  Data Path: up_down to up_an_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.514   0.793  up_down (up_down)
+     INV:I->O              6   0.612   0.569  up_an_ClkEn_inv1_INV_0 (up_an_ClkEn_inv)
+     FDPE:CE                   0.483          up_an_0
+    ----------------------------------------
+    Total                      2.971ns (1.609ns logic, 1.362ns route)
+                                       (54.2% logic, 45.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK1'
+  Clock period: 5.303ns (frequency: 188.574MHz)
+  Total number of paths / destination ports: 1134 / 28
+-------------------------------------------------------------------------
+Delay:               5.303ns (Levels of Logic = 28)
+  Source:            U1/q_1 (FF)
+  Destination:       U1/q_26 (FF)
+  Source Clock:      CLK1 rising
+  Destination Clock: CLK1 rising
+
+  Data Path: U1/q_1 to U1/q_26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.532  U1/q_1 (U1/q_1)
+     LUT1:I0->O            1   0.612   0.000  U1/Mcount_q_cy<1>_rt (U1/Mcount_q_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  U1/Mcount_q_cy<1> (U1/Mcount_q_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<2> (U1/Mcount_q_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<3> (U1/Mcount_q_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<4> (U1/Mcount_q_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<5> (U1/Mcount_q_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<6> (U1/Mcount_q_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<7> (U1/Mcount_q_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<8> (U1/Mcount_q_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<9> (U1/Mcount_q_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<10> (U1/Mcount_q_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<11> (U1/Mcount_q_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<12> (U1/Mcount_q_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<13> (U1/Mcount_q_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<14> (U1/Mcount_q_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<15> (U1/Mcount_q_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<16> (U1/Mcount_q_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<17> (U1/Mcount_q_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<18> (U1/Mcount_q_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<19> (U1/Mcount_q_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<20> (U1/Mcount_q_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<21> (U1/Mcount_q_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<22> (U1/Mcount_q_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<23> (U1/Mcount_q_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  U1/Mcount_q_cy<24> (U1/Mcount_q_cy<24>)
+     MUXCY:CI->O           0   0.052   0.000  U1/Mcount_q_cy<25> (U1/Mcount_q_cy<25>)
+     XORCY:CI->O           1   0.699   0.426  U1/Mcount_q_xor<26> (Result<26>)
+     LUT2:I1->O            1   0.612   0.000  U1/Mcount_q_eqn_261 (U1/Mcount_q_eqn_26)
+     FDC:D                     0.268          U1/q_26
+    ----------------------------------------
+    Total                      5.303ns (4.345ns logic, 0.958ns route)
+                                       (81.9% logic, 18.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/done'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              4.134ns (Levels of Logic = 1)
+  Source:            seg_5 (FF)
+  Destination:       seg<0> (PAD)
+  Source Clock:      U1/done rising
+
+  Data Path: seg_5 to seg<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.514   0.451  seg_5 (seg_5)
+     OBUF:I->O                 3.169          seg_0_OBUF (seg<0>)
+    ----------------------------------------
+    Total                      4.134ns (3.683ns logic, 0.451ns route)
+                                       (89.1% logic, 10.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.42 secs
+ 
+--> 
+
+Total memory usage is 150380 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

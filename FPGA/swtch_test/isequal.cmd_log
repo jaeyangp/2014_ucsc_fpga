@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/dalsook/FPGA/swtch_test/isequal.xst" -ofn "C:/Users/dalsook/FPGA/swtch_test/isequal.syr" 
